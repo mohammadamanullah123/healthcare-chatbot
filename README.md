@@ -8,7 +8,7 @@ It interacts conversationally with users, answers health-related questions, and 
 The project demonstrates the integration of NLP (Natural Language Processing) with AI-driven predictive analytics.
 
 # ⚙️ 2. Installation & Setup
-2.1 Install Dependencies
+# 2.1 Install Dependencies
 
 Before starting, ensure Python 3.8+ is installed. Then follow these steps:
 
