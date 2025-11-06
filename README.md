@@ -1,12 +1,13 @@
-🤖 AI-Powered Healthcare Chatbot with Disease Prediction
-🩺 1. Overview
+# 🤖 AI-Powered Healthcare Chatbot with Disease Prediction
+
+# 🩺 1. Overview
 
 This project is an intelligent healthcare assistant chatbot built using the Rasa framework and integrated with a machine learning model for disease prediction (e.g., heart disease).
 
 It interacts conversationally with users, answers health-related questions, and can predict diseases based on user-provided medical parameters.
 The project demonstrates the integration of NLP (Natural Language Processing) with AI-driven predictive analytics.
 
-⚙️ 2. Installation & Setup
+# ⚙️ 2. Installation & Setup
 2.1 Install Dependencies
 
 Before starting, ensure Python 3.8+ is installed. Then follow these steps:
@@ -24,7 +25,7 @@ Optional (if using actions server):
 
 pip install flask joblib
 
-2.2 Create and Activate Virtual Environment
+# 2.2 Create and Activate Virtual Environment
 
 Recommended setup (for Ubuntu, Windows or macOS):
 
@@ -40,7 +41,7 @@ pip install -r requirements.txt
 
 (If you don’t have a requirements.txt, install the packages manually.)
 
-2.3 Project Structure 🧩
+# 2.3 Project Structure 🧩
 AI-Healthcare-Chatbot/
 │
 ├── actions.py                → Custom actions (includes disease prediction logic)
@@ -54,7 +55,7 @@ AI-Healthcare-Chatbot/
 ├── heart_disease_model.pkl   → Pretrained ML model for prediction
 └── config.yml                → NLP pipeline and policies
 
-🧠 3. Model Training
+# 🧠 3. Model Training
 3.1 Train ML Model
 
 Train a heart-disease prediction model using a dataset containing attributes like:
@@ -67,7 +68,7 @@ heart_disease_model.pkl
 
 This file will be loaded by actions.py whenever the chatbot performs disease prediction.
 
-3.2 Train Rasa Chatbot
+# 3.2 Train Rasa Chatbot
 
 Use the Rasa CLI to train the chatbot:
 
@@ -76,14 +77,14 @@ rasa train
 
 A trained model will be saved inside the models/ folder.
 
-🚀 4. Running the Chatbot
-Step 1: Start the Action Server
+# 🚀 4. Running the Chatbot
+# Step 1: Start the Action Server
 
 Run your custom action server to enable disease prediction actions:
 
 rasa run actions
 
-Step 2: Start the Chatbot
+# Step 2: Start the Chatbot
 
 In another terminal, start the chatbot shell:
 
@@ -92,13 +93,13 @@ rasa shell
 
 Once both are running, you can chat directly in the terminal or integrate it into a web interface.
 
-💬 5. Example Interaction
+# 💬 5. Example Interaction
 User: Hi, I’m feeling chest pain and shortness of breath.
 Bot: I’m sorry to hear that. Could you please provide your age, cholesterol level, and blood pressure?
 User: Age 45, cholesterol 210, BP 140.
 Bot: Based on your data, there is a moderate risk of heart disease. Please consult a doctor for further examination.
 
-🛠️ 6. Customization
+# 🛠️ 6. Customization
 Add More Diseases 🧬
 
 You can extend the chatbot to include additional models (e.g., diabetes, kidney disease).
@@ -107,7 +108,7 @@ Update the following files:
 • domain.yml – add new intents and responses
 • nlu.yml – train with more disease-related sentences
 
-🎮 7. Usage Options
+# 🎮 7. Usage Options
 Command-Line Options
 
 You can run Rasa commands as follows:
@@ -120,7 +121,7 @@ rasa interactive     → Interactive training mode
 Example Combined Run
 rasa run actions & rasa shell
 
-🔍 8. Troubleshooting
+# 🔍 8. Troubleshooting
 Chatbot doesn’t respond 🤐
 
 • Check that the action server is running.
@@ -142,7 +143,7 @@ Prediction inaccurate 🤔
 • Normalize or scale input features before training.
 
 
-🤝 10. Getting Help
+# 🤝 10. Getting Help
 
 If you face issues:
 • Check the Rasa documentation (https://rasa.com/docs
@@ -150,7 +151,7 @@ If you face issues:
 • Search existing GitHub issues or create a new one
 • Share your logs and model details when reporting problems
 
-❤️ Thank You!
+# ❤️ Thank You!
 
 You’ve reached the end — now go build your own intelligent healthcare assistant!
 Stay healthy and keep innovating! 🩺🤖
