@@ -43,17 +43,29 @@ pip install -r requirements.txt
 
 # 2.3 Project Structure 🧩
 AI-Healthcare-Chatbot/
+
 │
+
 ├── actions.py                → Custom actions (includes disease prediction logic)
+
 ├── predict_disease.py        → Script to predict disease using ML model
+
 ├── domain.yml                → Intents, entities, slots, and responses
+
 ├── data/
+
 │   ├── nlu.yml               → Training examples for intents
+
 │   ├── stories.yml           → Conversation stories
+
 │   └── rules.yml             → Conversation rules
+
 ├── models/                   → Trained Rasa models stored here
+
 ├── heart_disease_model.pkl   → Pretrained ML model for prediction
+
 └── config.yml                → NLP pipeline and policies
+
 
 # 🧠 3. Model Training
 3.1 Train ML Model
